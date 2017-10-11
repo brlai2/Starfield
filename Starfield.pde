@@ -23,12 +23,16 @@ class NormalParticle
   myAngle = angle;
   mySpeed = speed;
   }
+  void move(){
+    x = speed;
+  }
   void show(){
-    mySpeed = 
-}
+    fill(64);
+  }
 interface Particle
 {
-	//your code here
+  public void show();
+  public void move();
 }
 class OddballParticle implements Particle()
 {
@@ -38,4 +42,4 @@ class JumboParticle extends Particle()
 {
 	//your code here
 }
-//slide 39
+//slide 39+45
