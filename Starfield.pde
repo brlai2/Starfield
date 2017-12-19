@@ -28,7 +28,7 @@ class NormalParticle implements Particle
     myX = myY = 250;
     myAngle = Math.random() * 10 * Math.PI/2;
     mySpeed = (Math.random() + 0.1) * 3;
-    myColor = color(255, (int)(Math.random()*255), 23);
+    myColor = color(255,0,0);
   }
   public void move() {
     myX += Math.cos(myAngle) * mySpeed;
@@ -70,7 +70,7 @@ class OddballParticle implements Particle
   }
   public void show() {
     noStroke();
-    fill(22,132,240);
+    fill(2,72,240);
     ellipse((float)X, (float)Y, 20, 20);
   }
 }
