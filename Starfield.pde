@@ -56,12 +56,12 @@ class OddballParticle implements Particle
   double X, Y, myspeed;
   OddballParticle() {
     X = Y = 250;
-    myspeed = 3;
+    myspeed = 1;
     mycolor = color(0,0, 255);
   }
   public void move() {
-    X += (int)(Math.random()*99) - 49;
-    Y += (int)(Math.random()*99) - 49;
+    X += (int)(Math.random()*59) - 29;
+    Y += (int)(Math.random()*59) - 29;
     
     if(X >= 500 || X <= 0 || Y >= 500 || Y <= 0) {
       Y = 250;
