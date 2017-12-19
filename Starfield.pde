@@ -1,4 +1,4 @@
-Particle[] bob = new Particle[100];
+Particle[] bob = new Particle[50];
 
 void setup()
 {
@@ -27,12 +27,12 @@ class NormalParticle implements Particle
   NormalParticle() {
     myX = myY = 250;
     myAngle = Math.random() * 10 * Math.PI/2;
-    mySpeed = (Math.random() + 0.1) * 3;
+    mySpeed = (Math.random() + 0.1) * 2;
     myColor = color(255,0,0);
   }
   public void move() {
-    myX += Math.cos(myAngle) * mySpeed;
-    myY += Math.sin(myAngle) * mySpeed;
+    myX = myX + Math.cos(myAngle) * mySpeed;
+    myY = myY + Math.sin(myAngle) * mySpeed;
     if(myX >= 500 || myX <= 0 || myY >= 500 || myY <= 0) {
       myY = 250;
       myX = 250;
@@ -60,8 +60,8 @@ class OddballParticle implements Particle
     mycolor = color(0,0, 255);
   }
   public void move() {
-    X += (int)(Math.random()*59) - 29;
-    Y += (int)(Math.random()*59) - 29;
+    X = X + (int)(Math.random()*59) - 29;
+    Y = Y + (int)(Math.random()*59) - 29;
     
     if(X >= 500 || X <= 0 || Y >= 500 || Y <= 0) {
       Y = 250;
