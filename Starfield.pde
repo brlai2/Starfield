@@ -60,8 +60,8 @@ class OddballParticle implements Particle
     mycolor = color(0,0, 255);
   }
   public void move() {
-    X = X + (int)(Math.random()*59) - 29;
-    Y = Y + (int)(Math.random()*59) - 29;
+    X = X + (int)(Math.random()*9) - 5;
+    Y = Y + (int)(Math.random()*9) - 5;
     
     if(X >= 500 || X <= 0 || Y >= 500 || Y <= 0) {
       Y = 250;
