@@ -1,4 +1,4 @@
-Particle[] bob = new Particle[200];
+Particle[] bob = new Particle[100];
 
 void setup()
 {
@@ -57,7 +57,7 @@ class OddballParticle implements Particle
   OddballParticle() {
     X = Y = 250;
     myspeed = 3;
-    mycolor = color(0, 23, 255);
+    mycolor = color(0,0, 255);
   }
   public void move() {
     X += (int)(Math.random()*99) - 49;
